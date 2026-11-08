@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>나를 응원하는 글 · Love After Time</title>
+  <style>
+    :root { color-scheme: dark; --bg: #0b1410; --cream: #f5efe0; --gold: #dcb970; --sage: #759d84; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 20% 12%, #1d3529 0, transparent 34%), radial-gradient(circle at 85% 85%, #2d231b 0, transparent 28%), var(--bg); color: var(--cream); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; }
+    main { width: min(1040px, 100%); }
+    header { margin: 0 0 18px; }
+    .eyebrow { margin: 0 0 10px; color: var(--gold); letter-spacing: .24em; font-size: 12px; }
+    h1 { margin: 0; font-family: Georgia, "Noto Serif KR", serif; font-weight: 400; font-size: clamp(28px, 5vw, 54px); letter-spacing: -.04em; }
+    .subtitle { margin: 10px 0 0; color: #c8c2b4; font-size: 14px; }
+    .player { padding: 12px; border: 1px solid rgba(220,185,112,.45); background: rgba(8,15,12,.72); box-shadow: 0 24px 70px rgba(0,0,0,.28); }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #050907; }
+    .hint { margin: 14px 0 0; color: #a7b8aa; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">TYPO MOTION</p>
+      <h1>나를 응원하는 글</h1>
+      <p class="subtitle">Love After Time · 22.8초</p>
+    </header>
+    <section class="player" aria-label="나를 응원하는 글 영상">
+      <video controls playsinline preload="metadata">
+        <source src="video.mp4" type="video/mp4">
+        이 브라우저에서는 영상을 재생할 수 없습니다.
+      </video>
+    </section>
+    <p class="hint">재생 버튼을 눌러 감상해 주세요.</p>
+  </main>
+</body>
+</html>
